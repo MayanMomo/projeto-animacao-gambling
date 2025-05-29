@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Início</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTZ3MnMwbm5zZ2NxODJ5MWV3MnZmMml4dXE4czBtMDZhcTBxeGptNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26uf2YTgF5upXUTm0/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+
+    .buttons {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    button {
+      padding: 20px 40px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: gold;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Feito por Dário Oliveira, Lucas Pirk e Mayan Goller</h1>
+    <div class="buttons">
+      <button onclick="location.href='animacao.html'">▶ Reproduzir</button>
+      <button onclick="location.href='referencias.html'">📚 Fontes e Licença</button>
+    </div>
+  </div>
+</body>
+</html>
