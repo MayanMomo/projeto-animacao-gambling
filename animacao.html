@@ -34,11 +34,17 @@
 </head>
 <body>
   <h1>Animação</h1>
-  <video controls style="width: 80%; max-width: 800px;">
+  <video id="animationVideo" controls style="width: 80%; max-width: 800px;">
     <source src="VideoFinal.mp4" type="video/mp4">
     O seu navegador não suporta vídeo.
   </video>
   <br>
   <button onclick="location.href='index.html'">Voltar</button>
+   <script>
+  const video = document.getElementById('animationVideo');
+  video.addEventListener('ended', () => {
+    window.location.href = 'referencias.html'; // <- change this if your credits page has a different filename
+  });
+</script>
 </body>
 </html>
